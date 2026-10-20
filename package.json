@@ -8,29 +8,34 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "app": "electron .",
+    "start": "electron ."
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "idb": "^8.0.2",
+    "jszip": "^3.10.1",
     "lucide-react": "^1.16.0",
     "papaparse": "^5.5.3",
-    "jszip": "^3.10.1",
-    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
-    "idb": "^8.0.2"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/jszip": "^3.4.1",
     "@types/node": "^22.13.0",
+    "@types/papaparse": "^5.3.15",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@types/papaparse": "^5.3.15",
-    "@types/jszip": "^3.4.1",
     "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^44.9.1",
+    "jsdom": "^26.0.0",
     "typescript": "~5.7.2",
     "vite": "^6.1.0",
-    "vitest": "^3.0.5",
-    "jsdom": "^26.0.0",
-    "@testing-library/react": "^16.2.0",
-    "@testing-library/jest-dom": "^6.6.3"
-  }
+    "vitest": "^3.0.5"
+  },
+  "main": "electron/main.cjs",
+  "productName": "Warennummern-Checker"
 }
