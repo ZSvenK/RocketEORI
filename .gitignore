@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+
+# Temp files
+destatis_temp/
+init_script.js
+*.tsbuildinfo
+
+# Environment & logs
+.env
+.env.local
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
